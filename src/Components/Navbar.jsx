@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   const OpenLinkedin = () => {
-    const Link = "";
+    const Link = "https://www.linkedin.com/in/anirudha-kashid";
     window.open(Link, "_blank");
   };
 

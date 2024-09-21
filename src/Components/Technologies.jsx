@@ -1,9 +1,10 @@
 import {
-  RiReactjsLine,
-  RiHtml5Line,
-  RiCss3Line,
-  RiJavascriptLine,
+  RiReactjsFill,
+  RiHtml5Fill,
+  RiCss3Fill,
+  RiJavascriptFill,
   RiJavaLine,
+  RiTailwindCssFill,
 } from "react-icons/ri";
 import { motion } from "framer-motion";
 
@@ -38,20 +39,12 @@ function Technologies() {
         className="flex flex-wrap items-center justify-center gap-4"
       >
         <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <RiJavaLine className="text-7xl text-gray-500" />
-        </motion.div>
-        <motion.div
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiHtml5Line className="text-7xl text-orange-400" />
+          <RiHtml5Fill className="text-7xl text-orange-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(5)}
@@ -59,7 +52,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiCss3Line className="text-7xl text-blue-400" />
+          <RiCss3Fill className="text-7xl text-blue-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -67,7 +60,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiJavascriptLine className="text-7xl text-yellow-400" />
+          <RiJavascriptFill className="text-7xl text-yellow-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(6)}
@@ -75,7 +68,15 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+          <RiReactjsFill className="text-7xl text-cyan-400" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <RiTailwindCssFill className="text-7xl text-gray-500" />
         </motion.div>
       </motion.div>
     </div>

@@ -1,9 +1,11 @@
 import project1 from "../assets/projects/projeect 1.png";
 import project2 from "../assets/projects/Project 2.png";
+import project3 from "../assets/projects/project 3.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications.I have honed my skills in front-end technologies like React as well as back-end technologies like  SQL. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications.Iam Familier with a variety of technologies, including HTML5,CSS,JS,React and SQL. The journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active and exploring new technologies.`;
+export const HERO_CONTENT = `I'm a frontend developer passionate about crafting visually engaging websites that deliver seamless user experiences. I specialize in turning complex ideas into interactive digital realities, blending code and creativity to create interfaces that not only function beautifully but also leave a lasting impression. Let’s collaborate to build something extraordinary.`;
+
+export const ABOUT_TEXT = `I am a dedicated Frontend Web developer with a passion for creating efficient and user-friendly web applications.Iam Familier with a variety of technologies, including HTML5,CSS,JS,React JS and Tailwind CSS. The journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active and exploring new technologies.`;
 
 // export const EXPERIENCES = [
 //   {
@@ -44,11 +46,19 @@ const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Blog-app",
+    image: project3,
+    description:
+      "A sleek and intuitive blog app designed for effortless content creation and sharing. Write, edit, and publish posts with ease while enjoying a clean, user-friendly interface.",
+    technologies: ["HTML", "Tailwind CSS", "React JS", "Appwrite"],
+    link: "https://bloga-app.netlify.app",
+  },
+  {
     title: "Manage ToDo's Website",
     image: project1,
     description:
       "A managed todo website serve tool for individuals to create,edit, track, and complete tasks in a structured manner. ",
-    technologies: ["HTML", "Tailwind CSS", "React"],
+    technologies: ["HTML", "Tailwind CSS", "React JS"],
     link: "https://manaage-todos.netlify.app",
   },
   {
@@ -63,6 +73,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Mumbai,Maharashtra",
-  phoneNo: "+91-12456789",
-  email: "anirudhakashid2004@gmail.com",
+  // phoneNo: "+91-9004000953",
+  email: "kashidanirudha@gmail.com",
 };

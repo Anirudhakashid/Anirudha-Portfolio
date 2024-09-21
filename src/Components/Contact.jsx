@@ -1,5 +1,6 @@
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
+import { CiMail } from "react-icons/ci";
 
 function Contact() {
   return (
