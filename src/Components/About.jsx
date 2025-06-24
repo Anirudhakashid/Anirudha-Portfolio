@@ -9,10 +9,14 @@ function About() {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.6 }}
-          className="text-5xl font-bold text-center mb-20"
+          className="sm:text-5xl text-4xl font-bold text-center mb-16 mt-10"
         >
-          <span className="text-white">Behind</span>
-          <span className="text-white ml-4">the Code</span>
+          <span className="bg-gradient-to-r from-teal-400 via-sky-500 to-indigo-500 bg-clip-text text-transparent">
+            Behind
+          </span>
+          <span className="ml-4 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+            the Code
+          </span>
         </motion.h2>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
