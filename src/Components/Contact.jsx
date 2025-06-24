@@ -113,7 +113,7 @@ function Contact() {
                   </div>
                   <div>
                     <p className="text-neutral-400 text-sm">Email</p>
-                    <p className="text-white font-medium group-hover:text-purple-400 transition-colors">
+                    <p className="text-white font-medium break-all group-hover:text-purple-400 transition-colors">
                       {CONTACT.email}
                     </p>
                   </div>
@@ -136,7 +136,7 @@ function Contact() {
                 </div>
               </motion.div>
             </div>
-
+            {/* Social Media Links */}
             <div className="pt-6">
               <p className="text-neutral-400 mb-4">Follow me on social media</p>
               <div className="flex flex-wrap gap-4">
