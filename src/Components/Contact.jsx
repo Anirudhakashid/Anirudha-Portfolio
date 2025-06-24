@@ -123,20 +123,16 @@ function Contact() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={handleEmailCopy}
-                    className="p-2 bg-purple-500/20 hover:bg-purple-500/30 rounded-lg transition-colors"
+                    className="p-2 rounded-lg transition-colors"
                     title="Copy email"
-                  >
-                    <FaCopy className="text-purple-400 text-sm" />
-                  </motion.button>
+                  ></motion.button>
                   <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={handleEmailRedirect}
-                    className="p-2 bg-purple-500/20 hover:bg-purple-500/30 rounded-lg transition-colors"
+                    className="p-2  rounded-lg transition-colors"
                     title="Open email client"
-                  >
-                    <FaExternalLinkAlt className="text-purple-400 text-sm" />
-                  </motion.button>
+                  ></motion.button>
                 </div>
               </motion.div>
             </div>
@@ -190,6 +186,16 @@ function Contact() {
                 </p>
 
                 <div className="space-y-4">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={handleEmailRedirect}
+                    className="w-full px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-700 text-white font-semibold rounded-2xl hover:from-indigo-600 hover:to-purple-800 transition-all duration-300 flex items-center justify-center gap-2"
+                  >
+                    <FaExternalLinkAlt className="text-sm" />
+                    Send Email
+                  </motion.button>
+
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
