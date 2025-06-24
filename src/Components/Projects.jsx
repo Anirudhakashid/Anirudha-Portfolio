@@ -9,15 +9,16 @@ function Projects() {
   };
 
   return (
-    <div className="border-b border-neutral-800 pb-44">
+    <div id="projects" className="border-b border-neutral-800 pb-44">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-20 p-2 text-center text-5xl font-bold bg-gradient-to-r from-white via-neutral-200 to-neutral-400 bg-clip-text text-transparent"
+        className="my-20 p-2 text-center sm:text-5xl text-4xl font-bold bg-gradient-to-r from-[#38bdf8] via-[#a855f7] to-[#ec4899] bg-clip-text text-transparent"
       >
         Projects
       </motion.h2>
+
       <div className="space-y-12">
         {PROJECTS.map((projects, index) => (
           <motion.div
