@@ -1,11 +1,11 @@
 import project1 from "../assets/projects/projeect 1.png";
 import project2 from "../assets/projects/Project 2.png";
 import project3 from "../assets/projects/project 3.png";
+import bitsnip from "../assets/projects/bitsnip.png";
 
+export const HERO_CONTENT = `I'm a frontend developer turning ideas into sleek, interactive web experiences. With a passion for clean code and bold design, I build fast, responsive interfaces that leave a lasting impact. Let's create something remarkable together..`;
 
-export const HERO_CONTENT = `I'm a frontend developer passionate about crafting visually engaging websites that deliver seamless user experiences. I specialize in turning complex ideas into interactive digital realities, blending code and creativity to create interfaces that not only function beautifully but also leave a lasting impression. Let’s collaborate to build something extraordinary.`;
-
-export const ABOUT_TEXT = `I am a dedicated Frontend Web developer with a passion for creating efficient and user-friendly web applications.Iam Familier with a variety of technologies, including HTML5,CSS,JS,React JS and Tailwind CSS. The journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active and exploring new technologies.`;
+export const ABOUT_TEXT = `I'm a frontend developer skilled in HTML5, CSS, JavaScript, React, and Tailwind CSS. I love crafting user-friendly, high-performance interfaces and thrive in collaborative, problem-solving environments. Outside of coding, I explore tech trends and stay creatively active.`;
 
 // export const EXPERIENCES = [
 //   {
@@ -46,11 +46,34 @@ const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "bitSnip — Simplify, Share & Track URLs in Seconds",
+    image: bitsnip,
+    description:
+      "bitSnip is a sleek URL shortener that lets you trim long links, generate QR codes, and track link analytics — all in one place. Built with React and Supabase, it's fast, responsive, and user-friendly.",
+    technologies: [
+      "HTML",
+      "Tailwind CSS",
+      "React JS",
+      "Supabase",
+      "Shadcn UI",
+      "React Router",
+      "Context API",
+    ],
+    link: "https://bitsnip.vercel.app/",
+  },
+  {
     title: "Blog-app",
     image: project3,
     description:
       "A sleek and intuitive blog app designed for effortless content creation and sharing. Write, edit, and publish posts with ease while enjoying a clean, user-friendly interface.",
-    technologies: ["HTML", "Tailwind CSS", "React JS", "Appwrite"],
+    technologies: [
+      "HTML",
+      "Tailwind CSS",
+      "React JS",
+      "Appwrite",
+      "React Router",
+      "Redux Toolkit",
+    ],
     link: "https://bloga-app.netlify.app",
   },
   {
@@ -61,18 +84,18 @@ export const PROJECTS = [
     technologies: ["HTML", "Tailwind CSS", "React JS"],
     link: "https://manaage-todos.netlify.app",
   },
-  {
-    title: "Tic Tac Toe Game",
-    image: project2,
-    description:
-      "Tic Tac Toe is a classic two-player game typically played on a 3x3 grid. The game is straightforward yet engaging, requiring players to strategically place their marks.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    link: "https://tictactoe232fs.netlify.app",
-  },
+  // {
+  //   title: "Tic Tac Toe Game",
+  //   image: project2,
+  //   description:
+  //     "Tic Tac Toe is a classic two-player game typically played on a 3x3 grid. The game is straightforward yet engaging, requiring players to strategically place their marks.",
+  //   technologies: ["HTML", "CSS", "JavaScript"],
+  //   link: "https://tictactoe232fs.netlify.app",
+  // },
 ];
 
 export const CONTACT = {
   address: "Mumbai,Maharashtra",
-  // phoneNo: "+91-9004000953",
+  phoneNo: "+91-9004000953",
   email: "kashidanirudha@gmail.com",
 };
