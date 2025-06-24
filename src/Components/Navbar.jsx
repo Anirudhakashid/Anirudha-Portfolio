@@ -1,10 +1,10 @@
 import logo from "../assets/AnirudhaLogo.png";
+import { motion } from "framer-motion";
 import {
   FaLinkedin,
   FaGithub,
   FaTwitterSquare,
   FaInstagram,
-  FaCrosshairs,
 } from "react-icons/fa";
 
 const Navbar = () => {
@@ -29,30 +29,88 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="mb-20 flex items-center justify-between  py-6 h-10 ">
-      <div className=" flex flex-shrink-0 items-center text-white text-2xl ml-5">
-        {/* <img src={logo} alt="logo" className=" h-32 -mx-3 mt-2 " /> */}
-        <p>Ak</p>
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="sticky top-0 z-50 backdrop-blur-xl "
+    >
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex items-center justify-between py-4">
+          {/* Logo Section */}
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex flex-shrink-0 items-center"
+          >
+            <div className="relative">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/25 hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105">
+                <span className="text-white text-xl font-bold">AK</span>
+              </div>
+              {/* Optional: Add a subtle glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-xl blur-xl -z-10"></div>
+            </div>
+          </motion.div>
+
+          {/* Social Links Section */}
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex items-center gap-6"
+          >
+            <motion.div
+              whileHover={{ y: -2, scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="relative group"
+            >
+              <FaGithub
+                onClick={OpenGit}
+                className="text-2xl text-neutral-400 hover:text-white cursor-pointer transition-all duration-300"
+              />
+              <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-600 group-hover:w-full transition-all duration-300"></div>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ y: -2, scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="relative group"
+            >
+              <FaLinkedin
+                onClick={OpenLinkedin}
+                className="text-2xl text-neutral-400 hover:text-blue-400 cursor-pointer transition-all duration-300"
+              />
+              <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></div>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ y: -2, scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="relative group"
+            >
+              <FaTwitterSquare
+                onClick={OpenX}
+                className="text-2xl text-neutral-400 hover:text-sky-400 cursor-pointer transition-all duration-300"
+              />
+              <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-sky-400 group-hover:w-full transition-all duration-300"></div>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ y: -2, scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="relative group"
+            >
+              <FaInstagram
+                onClick={OpenInsta}
+                className="text-2xl text-neutral-400 hover:text-pink-400 cursor-pointer transition-all duration-300"
+              />
+              <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-pink-400 to-purple-500 group-hover:w-full transition-all duration-300"></div>
+            </motion.div>
+          </motion.div>
+        </div>
       </div>
-      <div className=" m-8 flex items-center justify-center gap-4 text-2xl text-white">
-        <FaGithub
-          onClick={OpenGit}
-          className=" hover:cursor-pointer hover:text-slate-400 "
-        />
-        <FaLinkedin
-          onClick={OpenLinkedin}
-          className=" hover:cursor-pointer hover:text-slate-400"
-        />
-        <FaTwitterSquare
-          onClick={OpenX}
-          className=" hover:cursor-pointer hover:text-slate-400 "
-        />
-        <FaInstagram
-          onClick={OpenInsta}
-          className=" hover:cursor-pointer hover:text-slate-400"
-        />
-      </div>
-    </nav>
+    </motion.nav>
   );
 };
 
