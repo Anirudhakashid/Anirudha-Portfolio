@@ -62,10 +62,11 @@ function Technologies() {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 p-2 text-center text-5xl font-bold bg-gradient-to-r from-white via-neutral-200 to-neutral-400 bg-clip-text text-transparent"
+        className="my-20 sm:text-5xl text-4xl p-2 bg-gradient-to-r from-cyan-400 via-indigo-500 to-fuchsia-600 bg-clip-text text-transparent text-center font-bold"
       >
         Technologies
       </motion.h2>
+
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
