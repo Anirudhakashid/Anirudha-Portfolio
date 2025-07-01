@@ -21,6 +21,7 @@ import { RiJavaLine } from "react-icons/ri";
 
 import { motion } from "framer-motion";
 import TechIcon from "./TechIcon";
+import { useState, useEffect } from "react";
 
 export const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -68,7 +69,7 @@ function Technologies() {
   const secondRow = technologiesIcon.slice(9);
 
   return (
-    <div className="border-b border-neutral-950 pb-24 overflow-hidden">
+    <div className="border-b border-neutral-950 pb-24 overflow-hidden relative">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -83,7 +84,7 @@ function Technologies() {
         <div className="relative">
           <motion.div
             className="flex gap-3 sm:gap-4 lg:gap-6"
-            animate={{ x: ["0%", "-50%"] }}
+            animate={{ x: ["0%", window.innerWidth < 768 ? "-100%" : "-50%"] }}
             transition={{
               duration: 25,
               ease: "linear",
@@ -117,7 +118,7 @@ function Technologies() {
         <div className="relative">
           <motion.div
             className="flex gap-3 sm:gap-4 lg:gap-6"
-            animate={{ x: ["-50%", "0%"] }}
+            animate={{ x: [window.innerWidth < 768 ? "-100%" : "-50%", "0%"] }}
             transition={{
               duration: 25,
               ease: "linear",
@@ -132,7 +133,6 @@ function Technologies() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
-                {/* Glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-400/10 to-cyan-400/10 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 <tech.icon
@@ -148,9 +148,6 @@ function Technologies() {
           </motion.div>
         </div>
       </div>
-
-      <div className="absolute top-0 left-0 w-20 sm:w-32 h-full bg-gradient-to-r from-neutral-950 to-transparent pointer-events-none z-10"></div>
-      <div className="absolute top-0 right-0 w-20 sm:w-32 h-full bg-gradient-to-l from-neutral-950 to-transparent pointer-events-none z-10"></div>
     </div>
   );
 }
