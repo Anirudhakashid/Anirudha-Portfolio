@@ -65,7 +65,7 @@ function Hero() {
               <button
                 onClick={() => {
                   const link = document.createElement("a");
-                  link.href = "/public/Anirudha_Resume.pdf";
+                  link.href = "/Anirudha_Resume.pdf";
                   link.download = "kashidAniruda_resume.pdf";
                   document.body.appendChild(link);
                   link.click();
