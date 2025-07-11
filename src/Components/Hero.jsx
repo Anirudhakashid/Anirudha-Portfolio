@@ -45,6 +45,7 @@ function Hero() {
               animate="visible"
               className="mt-4"
             >
+              {/* view my work button  */}
               <button
                 onClick={() => {
                   const projectsSection = document.getElementById("projects");
@@ -58,6 +59,21 @@ function Hero() {
                 className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-2xl hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 active:scale-95"
               >
                 View My Work
+              </button>
+
+              {/* download CV button */}
+              <button
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/public/Anirudha_Resume.pdf";
+                  link.download = "kashidAniruda_resume.pdf";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+                className="px-8 py-4 my-3 mx-3 bg-transparent border-2 border-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-2xl hover:bg-gradient-to-r hover:from-blue-500/10 hover:to-purple-600/10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25 active:scale-95 border-blue-500 hover:border-purple-600"
+              >
+                Download CV
               </button>
             </motion.div>
           </div>
